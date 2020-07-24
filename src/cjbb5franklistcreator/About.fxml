@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cjbb5franklistcreator.AboutController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="80.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleBack" prefHeight="60.0" prefWidth="100.0" text="Back" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About">
+                     <font>
+                        <Font name="Times New Roman" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="112.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="320.0" prefWidth="600.0">
+               <children>
+                  <GridPane prefWidth="600.0" vgap="20.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <padding>
+                        <Insets left="100.0" right="100.0" top="40.0" />
+                     </padding>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleWhatIs" text="What is a RankList?" />
+                        <Button mnemonicParsing="false" onAction="#handleWhatCan" text="What can a RankList be used for?" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#handleHowTo" text="How To" GridPane.rowIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Created by Conrad Bucholtz" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets top="80.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#handleStill" text="Still Confused?" GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

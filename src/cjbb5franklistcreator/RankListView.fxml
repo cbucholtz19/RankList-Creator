@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cjbb5franklistcreator.RankListViewController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <GridPane prefHeight="80.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleHome" prefHeight="60.0" prefWidth="100.0" text="Home" />
+                  <Button mnemonicParsing="false" onAction="#handleLoad" prefHeight="60.0" prefWidth="100.0" text="Load" GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#handleSave" prefHeight="60.0" prefWidth="100.0" text="Save" GridPane.columnIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#handleAddItem" prefHeight="60.0" prefWidth="100.0" text="Add Item" GridPane.columnIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#handleDelete" prefHeight="60.0" prefWidth="100.0" text="Delete Item" GridPane.columnIndex="4" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </GridPane>
+            <AnchorPane prefHeight="20.0" prefWidth="600.0">
+               <children>
+                  <Text fx:id="titleText" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" translateX="20.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <StackPane prefHeight="300.0" prefWidth="600.0">
+               <children>
+                  <ScrollPane hbarPolicy="ALWAYS" hmax="2.0" prefHeight="300.0" prefWidth="600.0" vbarPolicy="ALWAYS" vmax="2.0">
+                     <content>
+                        <GridPane fx:id="rankListGridPane" hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background: paleturquoise;">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="No Items In RankList" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

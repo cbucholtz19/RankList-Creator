@@ -1,0 +1,19 @@
+.root {
+    -fx-background-color: mediumaquamarine;
+}
+
+.label {
+    -fx-font-family: "Helvetica";
+    -fx-text-fill: black;
+}
+
+.button {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: black;
+    -fx-background-color: azure;
+}
+
+.scroll-pane {
+    -fx-background: azure;
+}
